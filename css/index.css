@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 50px;
+    background: #f1f8e9;
+}
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+    width: 50%;
+    border-right: 2px solid #004d40;
+    height: 100%;
+}
+aside button{
+    background-color: #025a51;
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
+main{
+    width: 50%;
+}
+h2,.newPerson{
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+.newPerson{
+    border: 0;
+    margin-top: 10px;
+}
+.sumall{
+    border-top: 2px solid #004d40;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+@media (max-width:552px) {
+    .container{
+        width: 350px;
+        gap: 10px;
+    }
+    aside{
+        width: 40%;
+        padding-right: 10px;
+    }
+    main {
+        width: 60%;
+    }
+}
